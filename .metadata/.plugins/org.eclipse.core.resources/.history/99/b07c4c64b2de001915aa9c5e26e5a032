@@ -1,0 +1,11 @@
+package com.app.control;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class FirstController {
+  @RequestMapping("/hello")
+  public String greet(){
+	  return "first"
+  }
+}

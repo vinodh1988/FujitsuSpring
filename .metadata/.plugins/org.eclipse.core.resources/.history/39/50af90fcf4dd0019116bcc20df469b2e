@@ -1,0 +1,27 @@
+package com.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+import com.model.Dept;
+import com.model.Emp;
+
+public class SecondRun {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	  
+	  Dept d=new Dept(1,"Marketing");
+	  Emp e1=new Emp(1,"Rajesh","Manager");
+	  Emp e2=new Emp(2,"Rahul","Clerk");
+	  
+	  e1.setDept(d);
+	  e2.setDept(d);
+	  
+	  
+	  
+  }
+}

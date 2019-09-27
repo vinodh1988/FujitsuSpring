@@ -1,0 +1,10 @@
+package com.run;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class XMLRun {
+  public static void main(String[] args) {
+	  ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+	
+  }
+}

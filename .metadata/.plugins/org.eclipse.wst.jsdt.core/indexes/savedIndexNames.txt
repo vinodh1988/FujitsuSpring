@@ -1,0 +1,12 @@
+INDEX VERSION 1.3+D:\Fujitsu\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3649851283.index
+1056209211.index
+3825242597.index
+7472881.index
+3436380395.index
+2307504621.index
+3702686540.index
+4056151520.index
+41046191.index
+145002494.index
+4184492327.index

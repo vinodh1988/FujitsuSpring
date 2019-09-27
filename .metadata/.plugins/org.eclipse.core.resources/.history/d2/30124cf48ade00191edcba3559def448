@@ -1,0 +1,38 @@
+package com.run;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+import com.model.Course;
+import com.model.Trainer;
+
+public class FourthRun {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	  Trainer t1=new Trainer(1,"Rakesh");
+	  Trainer t2=new Trainer(2,"George");
+	  Trainer t3=new Trainer(3,"Peter");
+	  
+	  Course c1=new Course(1,"Java");
+	  Course c2=new Course(2,"SQL");
+	  Course c3=new Course(3,"JS");
+	  
+	  Set<Course> set1=new HashSet<Course>();
+	  Set<Course> set2=new HashSet<Course>();
+	  Set<Course> set3=new HashSet<Course>();
+	  
+	  set1.add(c1); set1.add(c3);
+	  set2.add(c3);
+	  set3.add(c1);set3.add(c2);
+	  
+	  
+	  
+  }
+}

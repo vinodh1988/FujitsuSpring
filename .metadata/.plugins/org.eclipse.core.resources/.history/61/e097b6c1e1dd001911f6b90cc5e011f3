@@ -1,0 +1,15 @@
+package com.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.config.SessionProvider;
+
+public class DBOperation {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	
+  }
+}

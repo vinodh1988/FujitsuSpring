@@ -1,0 +1,59 @@
+package com.run;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+import com.model.Course;
+import com.model.Trainer;
+
+public class FourthRun {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	  Trainer t1=new Trainer(1,"Rakesh");
+	  Trainer t2=new Trainer(2,"George");
+	  Trainer t3=new Trainer(3,"Peter");
+	  
+	  Course c1=new Course(1,"Java");
+	  Course c2=new Course(2,"SQL");
+	  Course c3=new Course(3,"JS");
+	  
+	  Set<Course> set1=new HashSet<Course>();
+	  Set<Course> set2=new HashSet<Course>();
+	  Set<Course> set3=new HashSet<Course>();
+	  
+	  
+
+	  Set<Trainer> tset1=new HashSet<Trainer>();
+	  Set<Trainer> tset2=new HashSet<Trainer>();
+	  Set<Trainer> tset3=new HashSet<Trainer>();
+	  
+	  set1.add(c1); set1.add(c3);
+	  set2.add(c3);
+	  set3.add(c1);set3.add(c2);
+	  
+	  /*t1.setCourse(set1);
+	  t2.setCourse(set2);
+	  t3.setCourse(set3);*/
+	  
+	  tset1.add(t1);tset1.add(t3);
+	  tset2.add(t3);
+	  tset3.add(t1);tset3.add(t2);
+	  
+	  c1.setTrainers(tset1);
+	  c1.setTrainers(tset2);
+	  c1.setTrainers(tset3);
+	  
+	  s1.save(t1);
+	  s1.save(t2);
+	  s1.save(t3);
+	  
+	  t.commit();
+  }
+}

@@ -1,0 +1,11 @@
+package com.system.xml;
+
+public class Van implements Vehicle{
+
+	@Override
+	public void details() {
+		// TODO Auto-generated method stub
+		System.out.println("Van Details");
+	}
+
+}

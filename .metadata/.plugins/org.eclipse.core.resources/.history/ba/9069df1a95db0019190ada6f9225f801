@@ -1,0 +1,16 @@
+package com.run;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.system.xml.Vehicle;
+
+public class XMLRun {
+  public static void main(String[] args) {
+	  ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
+	  Vehicle v=(Vehicle)ac.getBean("car");
+	  v.details();
+	   v=(Vehicle)ac.getBean("van");
+	  v.details();
+  }
+}

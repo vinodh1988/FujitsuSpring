@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+th,td{
+	width:180px;
+	height: 30px;
+	padding: 5px;
+	font-family: arial
+}
+th{
+	background-color: tomato;
+	color: white;
+	
+}
+
+td{
+	background-color: lightgray;
+	color: darkred;
+}
+

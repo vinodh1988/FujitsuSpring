@@ -1,0 +1,21 @@
+package com.system.xml;
+
+public class CarManufacturing implements Manufacture{
+
+	@Override
+	public void assemble() {
+		// TODO Auto-generated method stub
+		System.out.println("SUV parts being assembled");
+	}
+
+	@Override
+	public void paint() {
+		// TODO Auto-generated method stub
+		System.out.println("SUV being painted");
+	}
+	
+	public void procure(){
+		System.out.println("SUV parts imported");
+	}
+
+}

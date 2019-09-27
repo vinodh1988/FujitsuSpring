@@ -1,0 +1,19 @@
+package com.system.java;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class ABCBank implements Bank{
+
+@Autowired
+Branch branch;
+	@Override
+	public void establish() {
+		// TODO Auto-generated method stub
+		System.out.println("ABC Bank Established");
+		branch.startBranch("Chennai");
+		branch.startBranch("Bengaluru");
+		branch.startBranch("Nagpur");
+		
+	}
+
+}

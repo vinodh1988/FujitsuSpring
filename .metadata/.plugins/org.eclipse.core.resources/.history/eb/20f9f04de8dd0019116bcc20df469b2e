@@ -1,0 +1,24 @@
+package com.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+import com.model.Person;
+
+public class DBOperation {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	 Person p1=new Person(12,"Ramesh","Chennai");
+	  //Person p2=new Person(14,"Lara","Chennai");
+	  s1.save(p1);
+	 // s1.save(p2);
+	  //Person p=(Person) s1.get(Person.class,12);
+	  //s1.delete(p);
+	  t.commit();
+	  System.out.println("New rows inserted");
+  }
+}

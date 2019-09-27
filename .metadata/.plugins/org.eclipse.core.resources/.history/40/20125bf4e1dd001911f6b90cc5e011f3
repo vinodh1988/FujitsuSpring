@@ -1,0 +1,18 @@
+package com.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+
+public class DBOperation {
+  public static void main(String[] args) {
+	  SessionFactory s=SessionProvider.getSessionFactory();
+	  Session s1=s.openSession();
+	  Transaction t=s1.beginTransaction();
+	  Person p=new Person(12,"Rahul","Chennai");
+	  Person p1=new Person(14,"Ravin","Bhopal");
+	
+  }
+}

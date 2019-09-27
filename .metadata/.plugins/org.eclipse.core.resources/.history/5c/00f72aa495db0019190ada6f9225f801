@@ -1,0 +1,19 @@
+package com.system.xml;
+
+public class Van implements Vehicle{
+Manufacture m;
+	@Override
+	public void details() {
+		// TODO Auto-generated method stub
+		System.out.println("Van Details");
+	}
+
+	@Override
+	public void manufacture() {
+		// TODO Auto-generated method stub
+		m.procure();
+		m.assemble();
+		m.paint();
+	}
+
+}

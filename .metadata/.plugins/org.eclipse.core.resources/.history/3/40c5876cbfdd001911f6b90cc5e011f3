@@ -1,0 +1,11 @@
+package com.system.java;
+
+public class ABCBank implements Bank{
+
+	@Override
+	public void establish() {
+		// TODO Auto-generated method stub
+		System.out.println("ABC Bank Established");
+	}
+
+}

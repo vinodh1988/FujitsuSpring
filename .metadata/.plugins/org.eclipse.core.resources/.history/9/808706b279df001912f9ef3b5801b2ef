@@ -1,0 +1,52 @@
+package com.control.aspect;
+
+import org.apache.log4j.Logger;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.control.ApplicationRequests;
+import com.control.SessionRequests;
+
+@Component
+@Aspect
+public class FirstAspect {
+	
+	
+
+	private Logger logger = Logger.getLogger(FirstAspect.class);
+	
+@Autowired
+	ApplicationRequests application;
+@Autowired
+	SessionRequests session;
+
+	@Pointcut("execution(* com.control.ZeroController.storeJobs(..))")
+	public void dummy(){}
+	
+	   @Pointcut("execution(* com.control.ZeroController.*(..))")
+		public void scope(){
+			
+		}
+	    
+	    @Before("scope()")
+	    public void process(){
+	    	logger.info("Scope Running...");
+	    	session.setRequests();
+	    	application.setRequests();
+	    }
+	    
+	
+
+	@AfterReturning(pointcut= "dummy()", returning = "retVal")
+	public void check(Object retVal){
+		String data=(String)retVal;
+		if(data.equals("form")){
+			logger.info("Validation error occured!!!!~~~~!!!!!!");
+			//System.out.println("Validation error Occured and aspect running");
+		}
+	}
+}

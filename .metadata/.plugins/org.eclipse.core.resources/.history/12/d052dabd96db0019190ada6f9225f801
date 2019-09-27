@@ -1,0 +1,19 @@
+package com.system.xml;
+
+public class SUV implements Vehicle{
+Manufacture m;
+	@Override
+	public void details() {
+		// TODO Auto-generated method stub
+		System.out.println("SUV works");
+	}
+
+	@Override
+	public void manufacture() {
+		// TODO Auto-generated method stub
+		m.procure();
+		m.assemble();
+		m.paint();
+	}
+
+}

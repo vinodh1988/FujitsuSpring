@@ -1,0 +1,25 @@
+package com.run;
+
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.config.SessionProvider;
+import com.model.Dept;
+import com.model.Emp;
+
+public class ThirdRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 SessionFactory s=SessionProvider.getSessionFactory();
+		  Session s1=s.openSession();
+		  Transaction t=s1.beginTransaction();
+		  Dept d=new Dept(4,"IT");
+		  Emp e1=new Emp(7,"Prem","Architect");
+		  Emp e2=new Emp(7,"Rishi","Programmer");
+	}
+
+}

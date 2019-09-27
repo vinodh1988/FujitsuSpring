@@ -1,0 +1,19 @@
+package com.config;
+
+import org.apache.log4j.Logger;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+@Aspect
+@Component
+public class MyAspect {
+	
+	Logger logger=Logger.getLogger(MyAspect.class);
+	
+	@Pointcut("execution(* com.control.SecondController.store(..))")
+	public void point(){
+		
+	}
+
+}

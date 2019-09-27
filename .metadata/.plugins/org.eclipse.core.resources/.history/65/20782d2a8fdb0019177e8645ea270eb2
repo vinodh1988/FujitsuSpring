@@ -1,0 +1,17 @@
+package com.system.xml;
+
+public class CarManufacturing implements Manufacture{
+
+	@Override
+	public void assemble() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void paint() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

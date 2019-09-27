@@ -1,0 +1,26 @@
+
+Sep 25, 2019 08:36:14.45 NEW SESSION
+Sep 25, 2019 08:36:14.45 [10764:11604:0925/083614.448:ERROR:backend_impl.cc(1060)] Critical error found -8
+Sep 25, 2019 08:36:15.17 [10764:10948:0925/083615.178:ERROR:wmi_refresher.cc(150)] Unable to add the Win32_PerfRawData_PerfDisk_PhysicalDisk enum.
+Sep 25, 2019 08:53:50.12 [10764:11604:0925/085350.129:ERROR:backend_impl.cc(1060)] Critical error found -8
+Sep 25, 2019 08:53:50.26 [10764:11604:0925/085350.260:ERROR:entry_impl.cc(995)] Failed to save user data
+Sep 25, 2019 10:34:31.08 [10764:8244:0925/103431.087:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 10:46:32.24 [10764:8244:0925/104632.245:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 10:46:32.25 [10764:8244:0925/104632.248:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 10:55:23.99 [10764:8244:0925/105523.999:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 11:33:30.64 [10764:8244:0925/113330.642:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 12:37:46.64 [10764:8244:0925/123746.642:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 13:21:51.87 [10764:10488:0925/132151.873:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:22:19.49 [10764:8244:0925/132219.492:ERROR:socket_stream.cc(219)] Closing stream with result -2
+Sep 25, 2019 13:22:21.39 [10764:8244:0925/132221.396:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+Sep 25, 2019 13:22:21.42 [10764:10488:0925/132221.397:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:22:31.52 [10764:8244:0925/132231.523:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 13:22:35.98 [10764:8244:0925/132235.980:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 13:23:13.64 [10764:10488:0925/132313.649:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:24:35.65 [10764:8244:0925/132435.654:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 13:25:02.69 [10764:10488:0925/132502.696:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:27:20.32 [10764:8244:0925/132720.328:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 13:28:37.14 [10764:10488:0925/132837.141:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:33:12.28 [10764:8244:0925/133312.282:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -105
+Sep 25, 2019 13:34:36.13 [10764:10488:0925/133436.139:ERROR:gcm_channel_status_request.cc(146)] GCM channel request failed.
+Sep 25, 2019 13:40:12.11 [10764:8244:0925/134012.118:ERROR:browser_process_sub_thread.cc(203)] Waited 9999 ms for network service

@@ -1,0 +1,11 @@
+package com.system.java;
+
+public class CustomerRegistration implements Process{
+
+	@Override
+	public void doProcess(String name) {
+		// TODO Auto-generated method stub
+		System.out.println("Registering customer for "+ name + " Bank");
+	}
+
+}
